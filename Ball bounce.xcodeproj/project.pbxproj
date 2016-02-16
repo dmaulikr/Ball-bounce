@@ -16,6 +16,12 @@
 		DACC608F1C73526C0020465D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACC608D1C73526C0020465D /* LaunchScreen.storyboard */; };
 		DACC609A1C73526C0020465D /* Ball_bounceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC60991C73526C0020465D /* Ball_bounceTests.swift */; };
 		DACC60A51C73526C0020465D /* Ball_bounceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC60A41C73526C0020465D /* Ball_bounceUITests.swift */; };
+		DACC60B41C7352BA0020465D /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC60B31C7352BA0020465D /* Ball.swift */; };
+		DACC60B61C7355070020465D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC60B51C7355070020465D /* Constants.swift */; };
+		DACC60B91C7355B80020465D /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC60B81C7355B80020465D /* Ground.swift */; };
+		DACC60BB1C7357DC0020465D /* Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC60BA1C7357DC0020465D /* Bounds.swift */; };
+		DACC60BD1C7362030020465D /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC60BC1C7362030020465D /* Arrow.swift */; };
+		DACC60BF1C73AACC0020465D /* Cup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC60BE1C73AACC0020465D /* Cup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		DACC60A01C73526C0020465D /* Ball bounceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ball bounceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACC60A41C73526C0020465D /* Ball_bounceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ball_bounceUITests.swift; sourceTree = "<group>"; };
 		DACC60A61C73526C0020465D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DACC60B31C7352BA0020465D /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ball.swift; path = ../Ball.swift; sourceTree = "<group>"; };
+		DACC60B51C7355070020465D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DACC60B81C7355B80020465D /* Ground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ground.swift; path = ../Ground.swift; sourceTree = "<group>"; };
+		DACC60BA1C7357DC0020465D /* Bounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bounds.swift; path = ../Bounds.swift; sourceTree = "<group>"; };
+		DACC60BC1C7362030020465D /* Arrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Arrow.swift; path = ../Arrow.swift; sourceTree = "<group>"; };
+		DACC60BE1C73AACC0020465D /* Cup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,8 @@
 		DACC60741C73526C0020465D = {
 			isa = PBXGroup;
 			children = (
+				DACC60BE1C73AACC0020465D /* Cup.swift */,
+				DACC60B51C7355070020465D /* Constants.swift */,
 				DACC607F1C73526C0020465D /* Ball bounce */,
 				DACC60981C73526C0020465D /* Ball bounceTests */,
 				DACC60A31C73526C0020465D /* Ball bounceUITests */,
@@ -101,14 +115,14 @@
 		DACC607F1C73526C0020465D /* Ball bounce */ = {
 			isa = PBXGroup;
 			children = (
-				DACC60801C73526C0020465D /* AppDelegate.swift */,
-				DACC60821C73526C0020465D /* GameScene.sks */,
 				DACC60841C73526C0020465D /* GameScene.swift */,
+				DACC60B31C7352BA0020465D /* Ball.swift */,
+				DACC60BC1C7362030020465D /* Arrow.swift */,
+				DACC60BA1C7357DC0020465D /* Bounds.swift */,
+				DACC60B81C7355B80020465D /* Ground.swift */,
+				DACC60801C73526C0020465D /* AppDelegate.swift */,
 				DACC60861C73526C0020465D /* GameViewController.swift */,
-				DACC60881C73526C0020465D /* Main.storyboard */,
-				DACC608B1C73526C0020465D /* Assets.xcassets */,
-				DACC608D1C73526C0020465D /* LaunchScreen.storyboard */,
-				DACC60901C73526C0020465D /* Info.plist */,
+				DACC60B21C7352890020465D /* Supporting files */,
 			);
 			path = "Ball bounce";
 			sourceTree = "<group>";
@@ -129,6 +143,18 @@
 				DACC60A61C73526C0020465D /* Info.plist */,
 			);
 			path = "Ball bounceUITests";
+			sourceTree = "<group>";
+		};
+		DACC60B21C7352890020465D /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				DACC60821C73526C0020465D /* GameScene.sks */,
+				DACC60881C73526C0020465D /* Main.storyboard */,
+				DACC608B1C73526C0020465D /* Assets.xcassets */,
+				DACC608D1C73526C0020465D /* LaunchScreen.storyboard */,
+				DACC60901C73526C0020465D /* Info.plist */,
+			);
+			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DACC60B91C7355B80020465D /* Ground.swift in Sources */,
+				DACC60BD1C7362030020465D /* Arrow.swift in Sources */,
+				DACC60BB1C7357DC0020465D /* Bounds.swift in Sources */,
+				DACC60B61C7355070020465D /* Constants.swift in Sources */,
+				DACC60B41C7352BA0020465D /* Ball.swift in Sources */,
 				DACC60851C73526C0020465D /* GameScene.swift in Sources */,
 				DACC60871C73526C0020465D /* GameViewController.swift in Sources */,
+				DACC60BF1C73AACC0020465D /* Cup.swift in Sources */,
 				DACC60811C73526C0020465D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
